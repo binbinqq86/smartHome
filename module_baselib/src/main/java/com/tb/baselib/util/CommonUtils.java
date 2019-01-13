@@ -30,6 +30,8 @@ public class CommonUtils {
 
     /**
      * 获取statusBar，可以用来设置背景渐变色
+     * 缺点及注意事项
+     * https://www.jianshu.com/p/035a7e19fd9b
      * @param activity
      * @return
      */
