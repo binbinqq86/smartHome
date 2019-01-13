@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color_FFFFFF">
+    
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/baselib_dp130"
+        android:background="@color/main_color_EF5227"/>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/main_ic_1hall_bg"
+        android:gravity="center"
+        android:text="@string/main_string_1hall"
+        android:textColor="@color/main_color_EF5227"
+        android:textSize="@dimen/baselib_dp36"
+        app:layout_constraintBottom_toBottomOf="@id/view"
+        app:layout_constraintLeft_toLeftOf="@id/view"
+        app:layout_constraintRight_toRightOf="@id/view"
+        app:layout_constraintTop_toTopOf="@id/view"/>
+    
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/baselib_dp50"
+        android:background="@color/main_color_EF5227"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/view">
+        
+        <RadioButton
+            android:id="@+id/rb_login"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:button="@color/main_color_transparent"
+            android:checked="true"
+            android:gravity="center"
+            android:text="@string/main_string_login"
+            android:textColor="@color/main_color_FFFFFF"
+            android:textSize="@dimen/baselib_dp18"/>
+        
+        <RadioButton
+            android:id="@+id/rb_register"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:button="@color/main_color_transparent"
+            android:checked="false"
+            android:gravity="center"
+            android:text="@string/main_string_register"
+            android:textColor="@color/main_color_FFFFFF"
+            android:textSize="@dimen/baselib_dp18"/>
+    </RadioGroup>
+    
+    <com.app.main.widget.Triangle
+        android:id="@+id/view_triangle"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/baselib_dp10"
+        app:layout_constraintTop_toBottomOf="@id/rg"/>
+    
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/view_triangle"/>
+</android.support.constraint.ConstraintLayout>

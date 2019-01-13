@@ -1,0 +1,26 @@
+<resources>
+    <string name="main_string_1hall">1hall</string>
+    <string name="main_string_splash1">自定义生活方式</string>
+    <string name="main_string_login">登录</string>
+    <string name="main_string_register">注册</string>
+    <string name="main_string_username">用户名</string>
+    <string name="main_string_userpwd">密码</string>
+    <string name="main_string_forget_pwd">忘记密码？</string>
+    <string name="main_string_please_input_phone">请输入手机号</string>
+    <string name="main_string_get_code">获取验证码</string>
+    <string name="main_string_input_code">输入验证码</string>
+    <string name="main_string_setpwd">请设置登录密码6-12位</string>
+    <string name="main_string_register_protocol">点击注册默认同意</string>
+    <string name="main_string_register_protocol1">《用户许可协议》</string>
+    <string name="main_string_find_pwd">找回密码</string>
+    <string name="main_string_please_input_code">请输入验证码</string>
+    <string name="main_string_please_reset_pwd">请重置密码（6-12位）</string>
+    <string name="main_string_ok">完成</string>
+    <string name="main_string_room_manage">房间管理</string>
+    <string name="main_string_bed">升降床</string>
+    <string name="main_string_close">关闭</string>
+    <string name="main_string_pause">暂停</string>
+    <string name="main_string_open">开启</string>
+    <string name="main_string_my">我的</string>
+    <string name="main_string_set">设置</string>
+</resources>

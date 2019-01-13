@@ -1,0 +1,15 @@
+<resources>
+    
+    <!-- Base application theme. -->
+    <style name="main_AppTheme" parent="@style/baselib_AppBaseTheme">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/main_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/main_colorPrimaryDark</item>
+        <item name="colorAccent">@color/main_colorAccent</item>
+    </style>
+    <style name="main_fullScreenTheme" parent="main_AppTheme">
+        <!--<item name="android:windowFullscreen">true</item>-->
+        <item name="android:windowNoTitle">true</item>
+        <!--<item name="android:background">@drawamain_ic_splashlash</item>-->
+    </style>
+</resources>

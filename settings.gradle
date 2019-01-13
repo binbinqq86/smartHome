@@ -1,0 +1,1 @@
+include ':module_main', ':module_baselib', ':module_test', ':module_annotation', ':module_router', ':module_commonlib'

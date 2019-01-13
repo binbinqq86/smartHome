@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="main_colorPrimary">#FFFFFF</color>
+    <color name="main_colorPrimaryDark">#00000000</color>
+    <color name="main_colorAccent">#EF5227</color>
+    
+    <color name="main_color_EF5227">#EF5227</color>
+    <color name="main_color_FFFFFF">#FFFFFF</color>
+    <color name="main_color_transparent">#00FFFFFF</color>
+    
+    <color name="main_color_F9F9F9">#F9F9F9</color>
+    <color name="main_color_FF0404">#FF0404</color>
+    <color name="main_color_A3A0A0">#A3A0A0</color>
+    <color name="main_color_828282">#828282</color>
+    <color name="main_color_DDDDDD">#DDDDDD</color>
+    <color name="main_color_535050">#535050</color>
+    <color name="main_color_EFEFEF">#EFEFEF</color>
+    <color name="main_color_CDC3C3">#CDC3C3</color>
+    <color name="main_color_060606">#060606</color>
+    <color name="main_color_default_ripple">#66828282</color>
+    <color name="main_color_979797">#979797</color>
+    <color name="main_color_95D1FF">#95D1FF</color>
+    <color name="main_color_BDBDBD">#BDBDBD</color>
+</resources>

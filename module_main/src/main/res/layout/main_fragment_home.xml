@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.scwang.smartrefresh.layout.SmartRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/srl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color_EFEFEF">
+    
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"/>
+        
+        <LinearLayout
+            android:id="@+id/ll_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"/>
+            
+            <RelativeLayout
+                android:id="@+id/rl_top"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/baselib_dp56"
+                android:paddingLeft="@dimen/baselib_dp16">
+                
+                <ImageView
+                    android:id="@+id/iv_home_top"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/main_ic_home_top"/>
+                
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="杭州市"
+                    android:textColor="@color/main_color_FFFFFF"
+                    android:textSize="@dimen/baselib_dp18"/>
+            </RelativeLayout>
+            
+            <View
+                android:id="@+id/view_line"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/baselib_dp0.5"
+                android:background="@color/main_color_CDC3C3"/>
+        </LinearLayout>
+    </FrameLayout>
+</com.scwang.smartrefresh.layout.SmartRefreshLayout>

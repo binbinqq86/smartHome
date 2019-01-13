@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "E:\\20170619\\smartHome\\module_commonlib\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-zh\\values-zh.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\TianBin\\.gradle\\caches\\transforms-1\\files-1.1\\SmartRefreshLayout-1.0.5.1.aar\\3ee05d04c771af26b958bb7646be4ac2\\res\\values-zh\\values-zh.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,163",
+                        "endColumns": "107,91",
+                        "endOffsets": "158,250"
+                    }
+                }
+            ]
+        }
+    ]
+}

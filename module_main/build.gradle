@@ -1,0 +1,78 @@
+apply plugin: 'com.android.application'
+
+static def getTime() {
+    return new Date().format("yyyyMMddHHmmss", TimeZone.getDefault())
+}
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+    defaultConfig {
+        applicationId APPLICATION_ID
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode VERSION_CODE as int
+        versionName VERSION_NAME
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [moduleName: project.getName()]
+            }
+        }
+    resourcePrefix 'main_'
+    }
+    signingConfigs {
+        keyConfig {
+            keyAlias KEY_MOBILE_ALIAS
+            keyPassword KEY_PASSWORD
+            storeFile file(KEY_FILE)
+            storePassword KEY_PASSWORD
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            zipAlignEnabled true
+            debuggable false
+            signingConfig signingConfigs.keyConfig
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField 'boolean', 'IS_DEBUG_MODE', IS_DEBUG_MODE_RELEASE
+            buildConfigField 'String', 'MAIN_API_URL', MAIN_API_URL_RELEASE
+            resValue 'string','app_name',"1Hall"
+        }
+        debug {
+            minifyEnabled false
+            shrinkResources false
+            zipAlignEnabled false
+            debuggable true
+            signingConfig signingConfigs.keyConfig
+            buildConfigField 'boolean', 'IS_DEBUG_MODE', IS_DEBUG_MODE_DEBUG
+            buildConfigField 'String', 'MAIN_API_URL', MAIN_API_URL_DEBUG
+            resValue 'string','app_name',"1Hall测试"
+        }
+    }
+
+    applicationVariants.all { variant ->
+        variant.outputs.all { output ->
+            outputFileName = getTime() + "_" + APP_OUTPUT_NAME + "_" + VERSION_NAME + "_" + variant.buildType.name + ".apk"
+        }
+    }
+    compileOptions {
+        sourceCompatibility rootProject.ext.javaCompileVersion
+        targetCompatibility rootProject.ext.javaCompileVersion
+    }
+}
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    annotationProcessor "com.alibaba:arouter-compiler:$rootProject.ext.arouterCompileVersion"
+    annotationProcessor project(':module_annotation')
+
+    if (IS_INTEGRATED.toBoolean()) {
+        implementation project(':module_test')
+    }else{
+        implementation project(':module_router')
+    }
+}

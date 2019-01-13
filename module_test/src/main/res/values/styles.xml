@@ -1,0 +1,10 @@
+<resources>
+    
+    <!-- Base application theme. -->
+    <style name="test_AppTheme" parent="@style/baselib_AppBaseTheme">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/test_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/test_colorPrimaryDark</item>
+        <item name="colorAccent">@color/test_colorAccent</item>
+    </style>
+</resources>

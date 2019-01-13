@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    
+    <declare-styleable name="baselib_MaxHeightScrollView">
+        <attr name="baselib_max_height" format="dimension"/>
+    </declare-styleable>
+    
+    <declare-styleable name="baselib_BaseImageView">
+        <!--其他一切不规则图案-->
+        <attr name="baselib_other_type">
+            <enum name="STAR" value="1"/>
+            <enum name="BEAR" value="2"/>
+            <enum name="HEXAGON" value="3"/>
+        </attr>
+        <!--顺时针1234四个角，四个角可分为1,2,3,4,12,13,14,23,24,34,123,124,134,234,1234十五种情况-->
+        <attr name="baselib_corner_type">
+            <enum name="ALL" value="1234"/>
+            <enum name="TOP_LEFT" value="1"/>
+            <enum name="TOP_RIGHT" value="2"/>
+            <enum name="BOTTOM_RIGHT" value="3"/>
+            <enum name="BOTTOM_LEFT" value="4"/>
+            <enum name="TOP_LEFT_TOP_RIGHT" value="12"/>
+            <enum name="TOP_LEFT_BOTTOM_RIGHT" value="13"/>
+            <enum name="TOP_LEFT_BOTTOM_LEFT" value="14"/>
+            <enum name="TOP_RIGHT_BOTTOM_RIGHT" value="23"/>
+            <enum name="TOP_RIGHT_BOTTOM_LEFT" value="24"/>
+            <enum name="BOTTOM_RIGHT_BOTTOM_LEFT" value="34"/>
+            <enum name="TOP_LEFT_TOP_RIGHT_BOTTOM_RIGHT" value="123"/>
+            <enum name="TOP_LEFT_TOP_RIGHT_BOTTOM_LEFT" value="124"/>
+            <enum name="TOP_LEFT_BOTTOM_RIGHT_BOTTOM_LEFT" value="134"/>
+            <enum name="TOP_RIGHT_BOTTOM_RIGHT_BOTTOM_LEFT" value="234"/>
+        </attr>
+        <!--椭圆-->
+        <attr name="baselib_is_oval" format="boolean"/>
+        <!--是否是圆形图片-->
+        <attr name="baselib_is_circle" format="boolean"/>
+        
+        <!--=====================上面是互斥的属性，下面的可以与上面的共存=====================-->
+        <!--是否带边框-->
+        <attr name="baselib_has_border" format="boolean"/>
+        <!--边框颜色-->
+        <attr name="baselib_border_color" format="color|reference"/>
+        <!--边框宽度-->
+        <attr name="baselib_border_width" format="dimension"/>
+        <!--圆角的度数（代表所有角，不再单独针对部分圆角的情况提供某一个角的度数）-->
+        <attr name="baselib_corner_radius" format="dimension"/>
+        <!--是否高斯模糊-->
+        <attr name="baselib_is_blur" format="boolean"/>
+        <!--高斯模糊半径-->
+        <attr name="baselib_blur_radius" format="float"/>
+        <!--当图片为空的时候，默认颜色-->
+        <attr name="baselib_default_color" format="color|reference"/>
+    </declare-styleable>
+</resources>

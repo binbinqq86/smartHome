@@ -1,0 +1,3 @@
+# Referenced at F:\20170619\smartHome\module_main\build\intermediates\manifests\full\debug\AndroidManifest.xml:15
+-keep class com.app.main.MainApplication { <init>(...); }
+

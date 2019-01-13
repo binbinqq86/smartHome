@@ -1,0 +1,3 @@
+# Referenced at E:\20170619\smartHome\module_test\build\intermediates\manifest\androidTest\debug\AndroidManifest.xml:9
+-keep class android.support.test.runner.AndroidJUnitRunner { <init>(...); }
+

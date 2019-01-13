@@ -1,0 +1,50 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode VERSION_CODE as int
+        versionName VERSION_NAME
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        multiDexEnabled true
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [moduleName: project.getName()]
+            }
+        }
+        //限定所有资源前缀名
+        resourcePrefix "router_"
+    }
+    buildTypes {
+        release {
+            buildConfigField 'boolean', 'IS_DEBUG_MODE', IS_DEBUG_MODE_RELEASE
+            debuggable false
+        }
+        debug {
+            buildConfigField 'boolean', 'IS_DEBUG_MODE', IS_DEBUG_MODE_DEBUG
+            debuggable true
+        }
+        //跟随主项目buildTypes。库默认为release
+        publishNonDefault true
+    }
+    compileOptions {
+        sourceCompatibility rootProject.ext.javaCompileVersion
+        targetCompatibility rootProject.ext.javaCompileVersion
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    annotationProcessor "com.alibaba:arouter-compiler:$rootProject.ext.arouterCompileVersion"
+    annotationProcessor project(':module_annotation')
+    api project(':module_commonlib')
+}

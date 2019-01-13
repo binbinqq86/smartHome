@@ -1,0 +1,69 @@
+if (IS_INTEGRATED.toBoolean()) {
+    apply plugin: 'com.android.library'
+} else {
+    apply plugin: 'com.android.application'
+}
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode VERSION_CODE as int
+        versionName VERSION_NAME
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        multiDexEnabled true
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [moduleName: project.getName()]
+            }
+        }
+        resourcePrefix 'test_'
+    }
+    buildTypes {
+        release {
+            buildConfigField 'boolean', 'IS_DEBUG_MODE', IS_DEBUG_MODE_RELEASE
+            debuggable false
+        }
+        debug {
+            buildConfigField 'boolean', 'IS_DEBUG_MODE', IS_DEBUG_MODE_DEBUG
+            debuggable true
+        }
+        //跟随主项目buildTypes。库默认为release
+        publishNonDefault true
+    }
+    compileOptions {
+        sourceCompatibility rootProject.ext.javaCompileVersion
+        targetCompatibility rootProject.ext.javaCompileVersion
+    }
+
+    sourceSets {
+        main {
+            if (IS_INTEGRATED.toBoolean()) {
+                manifest.srcFile 'src/main/AndroidManifest.xml'
+                java {
+                    exclude 'debug/**'
+                }
+            } else {
+                manifest.srcFile 'src/main/AndroidManifest_debug.xml'
+            }
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+    annotationProcessor "com.alibaba:arouter-compiler:$rootProject.ext.arouterCompileVersion"
+    annotationProcessor project(':module_annotation')
+    api project(':module_router')
+}

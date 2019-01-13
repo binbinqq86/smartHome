@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="test_colorAccent">#EF5227</color>
+    <color name="test_colorPrimary">#FFFFFF</color>
+    <color name="test_colorPrimaryDark">#00000000</color>
+    <string name="test_app_name">module_test</string>
+    <style name="test_AppTheme" parent="@style/baselib_AppBaseTheme">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/test_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/test_colorPrimaryDark</item>
+        <item name="colorAccent">@color/test_colorAccent</item>
+    </style>
+</resources>
