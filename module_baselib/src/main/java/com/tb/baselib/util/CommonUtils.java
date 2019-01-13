@@ -7,6 +7,7 @@ import android.os.Build;
 import android.support.annotation.RequiresApi;
 import android.util.DisplayMetrics;
 import android.util.TypedValue;
+import android.view.View;
 import android.view.WindowManager;
 
 import com.tb.baselib.R;
@@ -26,7 +27,17 @@ public class CommonUtils {
     public static float dp2Px(float dp) {
         return TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, dp, BaseApplication.application.getResources().getDisplayMetrics());
     }
-    
+
+    /**
+     * 获取statusBar，可以用来设置背景渐变色
+     * @param activity
+     * @return
+     */
+    public static View getStatusBarView(Activity activity) {
+        int identifier = activity.getResources().getIdentifier("statusBarBackground", "id", "android");
+        return activity.getWindow().findViewById(identifier);
+    }
+
     /**
      * 获取系统状态栏高度
      * @return
