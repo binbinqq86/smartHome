@@ -1,37 +1,37 @@
 -- Merging decision tree log ---
 manifest
-ADDED from F:\20170619\smartHome\module_router\src\main\AndroidManifest.xml:1:1-2:51
-INJECTED from F:\20170619\smartHome\module_router\src\main\AndroidManifest.xml:1:1-2:51
-INJECTED from F:\20170619\smartHome\module_router\src\main\AndroidManifest.xml:1:1-2:51
-INJECTED from F:\20170619\smartHome\module_router\src\main\AndroidManifest.xml:1:1-2:51
-INJECTED from F:\20170619\smartHome\module_router\src\main\AndroidManifest.xml:1:1-2:51
-INJECTED from F:\20170619\smartHome\module_router\src\main\AndroidManifest.xml:1:1-2:51
-INJECTED from F:\20170619\smartHome\module_router\src\main\AndroidManifest.xml:1:1-2:51
+ADDED from D:\tb\smartHome\module_router\src\main\AndroidManifest.xml:1:1-2:51
+INJECTED from D:\tb\smartHome\module_router\src\main\AndroidManifest.xml:1:1-2:51
+INJECTED from D:\tb\smartHome\module_router\src\main\AndroidManifest.xml:1:1-2:51
+INJECTED from D:\tb\smartHome\module_router\src\main\AndroidManifest.xml:1:1-2:51
+INJECTED from D:\tb\smartHome\module_router\src\main\AndroidManifest.xml:1:1-2:51
+INJECTED from D:\tb\smartHome\module_router\src\main\AndroidManifest.xml:1:1-2:51
+INJECTED from D:\tb\smartHome\module_router\src\main\AndroidManifest.xml:1:1-2:51
 	package
-		ADDED from F:\20170619\smartHome\module_router\src\main\AndroidManifest.xml:2:11-49
-		INJECTED from F:\20170619\smartHome\module_router\src\main\AndroidManifest.xml
-		INJECTED from F:\20170619\smartHome\module_router\src\main\AndroidManifest.xml
+		ADDED from D:\tb\smartHome\module_router\src\main\AndroidManifest.xml:2:11-49
+		INJECTED from D:\tb\smartHome\module_router\src\main\AndroidManifest.xml
+		INJECTED from D:\tb\smartHome\module_router\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from F:\20170619\smartHome\module_router\src\main\AndroidManifest.xml
-		ADDED from F:\20170619\smartHome\module_router\src\main\AndroidManifest.xml:1:1-2:51
-		INJECTED from F:\20170619\smartHome\module_router\src\main\AndroidManifest.xml
+		INJECTED from D:\tb\smartHome\module_router\src\main\AndroidManifest.xml
+		ADDED from D:\tb\smartHome\module_router\src\main\AndroidManifest.xml:1:1-2:51
+		INJECTED from D:\tb\smartHome\module_router\src\main\AndroidManifest.xml
 	android:versionCode
-		INJECTED from F:\20170619\smartHome\module_router\src\main\AndroidManifest.xml
-		ADDED from F:\20170619\smartHome\module_router\src\main\AndroidManifest.xml:1:1-2:51
-		INJECTED from F:\20170619\smartHome\module_router\src\main\AndroidManifest.xml
+		INJECTED from D:\tb\smartHome\module_router\src\main\AndroidManifest.xml
+		ADDED from D:\tb\smartHome\module_router\src\main\AndroidManifest.xml:1:1-2:51
+		INJECTED from D:\tb\smartHome\module_router\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from F:\20170619\smartHome\module_router\src\main\AndroidManifest.xml:1:11-69
+		ADDED from D:\tb\smartHome\module_router\src\main\AndroidManifest.xml:1:11-69
 uses-sdk
-INJECTED from F:\20170619\smartHome\module_router\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from F:\20170619\smartHome\module_router\src\main\AndroidManifest.xml
-INJECTED from F:\20170619\smartHome\module_router\src\main\AndroidManifest.xml
-INJECTED from F:\20170619\smartHome\module_router\src\main\AndroidManifest.xml
-INJECTED from F:\20170619\smartHome\module_router\src\main\AndroidManifest.xml
+INJECTED from D:\tb\smartHome\module_router\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\tb\smartHome\module_router\src\main\AndroidManifest.xml
+INJECTED from D:\tb\smartHome\module_router\src\main\AndroidManifest.xml
+INJECTED from D:\tb\smartHome\module_router\src\main\AndroidManifest.xml
+INJECTED from D:\tb\smartHome\module_router\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from F:\20170619\smartHome\module_router\src\main\AndroidManifest.xml
-		ADDED from F:\20170619\smartHome\module_router\src\main\AndroidManifest.xml
-		INJECTED from F:\20170619\smartHome\module_router\src\main\AndroidManifest.xml
+		INJECTED from D:\tb\smartHome\module_router\src\main\AndroidManifest.xml
+		ADDED from D:\tb\smartHome\module_router\src\main\AndroidManifest.xml
+		INJECTED from D:\tb\smartHome\module_router\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from F:\20170619\smartHome\module_router\src\main\AndroidManifest.xml
-		ADDED from F:\20170619\smartHome\module_router\src\main\AndroidManifest.xml
-		INJECTED from F:\20170619\smartHome\module_router\src\main\AndroidManifest.xml
+		INJECTED from D:\tb\smartHome\module_router\src\main\AndroidManifest.xml
+		ADDED from D:\tb\smartHome\module_router\src\main\AndroidManifest.xml
+		INJECTED from D:\tb\smartHome\module_router\src\main\AndroidManifest.xml
